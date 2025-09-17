@@ -21,7 +21,7 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--texto);
-  background: var(--fondo);
+  /* background: var(--fondo); */
   line-height: 1.5;
 }
 
@@ -75,29 +75,29 @@ nav.navbar a {
   box-shadow: none !important;
 }
 
-#principal {
+.principal {
   background: linear-gradient(180deg, #0e72ed, #fff);
 }
 
-#principal h1 {
+.principal h1 {
   font-size: 2rem;
   margin-bottom: 6px;
   color: var(--color-acento);
   font-weight: bold;
 }
 
-#principal p {
+.principal p {
   color: var(--blanco);
 }
 
-#destinos {
+.destinos {
   border: 1px solid #d2d2d2;
   border-radius: 10px;
   margin: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-#destinos h2 {
+.destinos h2 {
   display: flex;
   justify-content: center;
 }
