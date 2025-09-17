@@ -23,16 +23,16 @@
   </head>
   <body>
     <header>
-      <div class="container header-top">
+      <div class="header-top">
         <p class="site-title texto-mayus">
           <span class="texto-destacado">Viaja</span> por Colombia
         </p>
       </div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler ms-auto"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -69,9 +69,9 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main id="inicio">
       <!-- Página de ciudad: estructura semántica + comentarios -->
-      <section id="hero">
+      <section id="principal">
         <div class="container centrado">
           <h1>Medellín</h1>
           <p class="texto-suave">
@@ -88,7 +88,7 @@
             <article class="card">
               <figure>
                 <img
-                  src="https://picsum.photos/seed/Medellín_1/800/450"
+                  src="https://i.pinimg.com/736x/e3/f4/fb/e3f4fbad6aa061f4ab296139651a9162.jpg"
                   alt="Lugar: Comuna 13 en Medellín"
                 />
                 <figcaption class="texto-suave centrado">Comuna 13</figcaption>
@@ -104,7 +104,7 @@
             <article class="card">
               <figure>
                 <img
-                  src="https://picsum.photos/seed/Medellín_2/800/450"
+                  src="https://i.pinimg.com/1200x/e9/6d/18/e96d189a25897c87e359d7d86fa5cdb4.jpg"
                   alt="Lugar: Parque Arví en Medellín"
                 />
                 <figcaption class="texto-suave centrado">
@@ -122,7 +122,7 @@
             <article class="card">
               <figure>
                 <img
-                  src="https://picsum.photos/seed/Medellín_3/800/450"
+                  src="https://i.pinimg.com/736x/cf/2e/3c/cf2e3ce1ed7bbd1844afa003f58291a9.jpg"
                   alt="Lugar: Plaza Botero en Medellín"
                 />
                 <figcaption class="texto-suave centrado">
@@ -140,7 +140,7 @@
             <article class="card">
               <figure>
                 <img
-                  src="https://picsum.photos/seed/Medellín_4/800/450"
+                  src="https://i.pinimg.com/1200x/38/cf/ee/38cfee0e335b538c8bb72259dbd0c18f.jpg"
                   alt="Lugar: Pueblito Paisa en Medellín"
                 />
                 <figcaption class="texto-suave centrado">
@@ -158,7 +158,7 @@
             <article class="card">
               <figure>
                 <img
-                  src="https://picsum.photos/seed/Medellín_5/800/450"
+                  src="https://i.pinimg.com/1200x/b7/9a/66/b79a6625885810c8ac1f97f289b41c94.jpg"
                   alt="Lugar: Jardín Botánico en Medellín"
                 />
                 <figcaption class="texto-suave centrado">
@@ -174,32 +174,29 @@
               </div>
             </article>
           </div>
-
-          <!-- Listas para el criterio de evaluación -->
-          <div style="margin-top: 12px">
-            <h3>Datos rápidos</h3>
-            <ul class="lista-basica">
-              <li>Clima promedio: templado</li>
-              <li>
-                Plato típico: ajiaco/arepa/sancocho/encocado (según región)
-              </li>
-              <li>Mejor época para visitar: junio–septiembre</li>
-            </ul>
-          </div>
-
-          <!-- Multimedia: ejemplo de video embebido -->
-          <div style="margin-top: 12px">
-            <h3>Video (muestra)</h3>
-            <!-- Se puede reemplazar el VIDEO_ID por uno real -->
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/VIDEO_ID"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="containerExtras">
+            <div class="containerVideo">
+              <h3>Video (muestra)</h3>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/ujn2G4JgN4k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="containerDatosRapidos">
+              <h3>Datos rápidos</h3>
+              <ul class="lista-basica">
+                <li>Clima promedio: templado</li>
+                <li>
+                  Plato típico: ajiaco/arepa/sancocho/encocado (según región)
+                </li>
+                <li>Mejor época para visitar: junio–septiembre</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

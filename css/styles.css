@@ -59,7 +59,9 @@ header {
 .header-top {
   padding: 14px 30px;
 }
-
+.navbar-brand{
+  display: none !important;
+}
 nav.navbar {
   background: var(--color-primario) !important;
   color: var(--blanco);
@@ -72,6 +74,7 @@ nav.navbar a {
   outline: none !important;
   box-shadow: none !important;
 }
+
 #principal {
   background: linear-gradient(180deg, #0e72ed, #fff);
 }
@@ -93,10 +96,12 @@ nav.navbar a {
   margin: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.08);
 }
+
 #destinos h2 {
   display: flex;
   justify-content: center;
 }
+
 .button {
   display: inline-block;
   margin: 5px 0;
@@ -111,6 +116,7 @@ nav.navbar a {
 section {
   padding: 24px 0;
 }
+
 .section-title {
   font-size: 1.5rem;
   margin-bottom: 12px;
@@ -191,7 +197,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.containerExtras{
+.containerExtras {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -208,7 +214,7 @@ img {
   padding: 10px;
 }
 
-.containerVideo{
+.containerVideo {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -227,16 +233,21 @@ img {
   .containerDatosRapidos {
     margin-top: 15px;
   }
-  .containerExtras{
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  width: 100%;
-  align-items: center;
-  margin-top: 10px;
-}
-.containerDatosRapidos {
-  margin-top: 40px;
-height: 315px;
+  .containerExtras {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .containerDatosRapidos {
+    margin-top: 40px;
+    height: 315px;
+  }
+  .section-title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #1C7AEC;
 }
 }
