@@ -57,13 +57,19 @@ header {
 }
 
 .header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 14px 30px;
+}
+.site-title{
+  margin-top: 14px;
 }
 .navbar-brand{
   display: none !important;
 }
 nav.navbar {
-  background: var(--color-primario) !important;
+  background: var(--color-acento) !important;
   color: var(--blanco);
 }
 nav.navbar a {
@@ -226,6 +232,12 @@ img {
   }
 }
 @media (min-width: 1280px) {
+  .header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
