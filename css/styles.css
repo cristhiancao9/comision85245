@@ -177,11 +177,18 @@ section {
   color: var(--color-primario);
 }
 
+.description{
+  text-align: justify;
+}
 aside {
   background: #fffef3;
   border: 1px dashed #f0e3a1;
   padding: 14px;
   border-radius: 8px;
+}
+
+iframe {
+  border-radius: 10px;
 }
 
 /* Footer */
