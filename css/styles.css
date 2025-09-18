@@ -40,7 +40,9 @@ body {
 .centrado {
   text-align: center;
 }
-
+.subtitle{
+  font-size: 12px;
+}
 /* Estructura */
 .container {
   display: flex;
@@ -119,6 +121,11 @@ nav.navbar a {
   width: max-content;
 }
 
+.button a{
+  color: var(--blanco);
+  text-decoration: none;
+}
+
 section {
   padding: 24px 0;
 }
@@ -164,7 +171,11 @@ section {
 .card p {
   color: #555;
 }
-
+.card .contenido h3{
+color: var(--color-primario);
+font-weight: bold;
+text-decoration: overline;
+}
 .lista-basica {
   margin-left: 1.2rem;
 }
@@ -244,6 +255,9 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 5px 30px;
+}
+.subtitle{
+  font-size: 20px;
 }
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
