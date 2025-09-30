@@ -1,0 +1,21 @@
+.principal {
+  background: linear-gradient(180deg, #0e72ed, #fff);
+}
+.principal div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+.principal div h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+  color: var(--color-acento);
+  font-weight: bold;
+}
+.principal div p {
+  color: var(--blanco);
+}
+
+/*# sourceMappingURL=estilos.css.map */
