@@ -1,3 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-base, #destinos div div article div .enlace, .principal div a {
+  display: inline-block;
+  margin: 5px 0;
+  background: #0fb87a;
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.container, #destinos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 30px;
+  background: #ffb703;
+}
+@media (min-width: 1280px) {
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+  }
+}
+.header-top p {
+  margin-top: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.header-top p span {
+  color: #1c7aec;
+  font-weight: bold;
+}
+.header-top nav {
+  background: #ffb703 !important;
+  color: #fff;
+}
+.header-top nav .navbar-toggler:focus,
+.header-top nav .navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.header-top nav div div ul li a {
+  color: #fff;
+}
+
 .principal {
   background: linear-gradient(180deg, #0e72ed, #fff);
 }
@@ -11,11 +73,79 @@
 .principal div h1 {
   font-size: 2rem;
   margin-bottom: 6px;
-  color: var(--color-acento);
+  color: #ffb703;
   font-weight: bold;
+  margin-top: 10px;
 }
 .principal div p {
-  color: var(--blanco);
+  color: #fff;
+  font-size: 12px;
+}
+@media (min-width: 1280px) {
+  .principal div p {
+    font-size: 20px;
+  }
+}
+#destinos div h2 {
+  display: flex;
+  justify-content: center;
+}
+#destinos div div {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 10px;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  #destinos div div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1280px) {
+  #destinos div div {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+  }
+}
+#destinos div div article {
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
+  margin: 8px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(8, 4, 4, 0.3);
+}
+@media (min-width: 1440px) {
+  #destinos div div article {
+    width: 350px;
+  }
+}
+#destinos div div article figure img {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+#destinos div div article div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+  background: linear-gradient(0deg, rgba(14, 114, 237, 0.137254902), #fff);
+}
+#destinos div div article div h3 {
+  margin-bottom: 6px;
+  color: #1c7aec;
+  font-weight: bold;
+  text-decoration: overline;
+}
+#destinos div div article div .description {
+  color: #555;
+}
+#destinos div div article div .enlace {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -8,7 +8,7 @@
       content="Viaja por Colombia: descubre Bogotá, Medellín, Chocó, Puerto Carreño y Armenia."
     />
     <title>Viaja por Colombia</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,9 +19,7 @@
   <body>
     <header>
       <div class="header-top">
-        <p class="site-title texto-mayus">
-          <span class="texto-destacado">Viaja</span> por Colombia
-        </p>
+        <p><span>Viaja</span> por Colombia</p>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <button
@@ -41,19 +39,19 @@
                   <a class="nav-link" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./bogota.html">Bogotá</a>
+                  <a class="nav-link" href="./pages/bogota.html">Bogotá</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./medellin.html">Medellín</a>
+                  <a class="nav-link" href="./pages/medellin.html">Medellín</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./armenia.html">Armenia</a>
+                  <a class="nav-link" href="./pages/armenia.html">Armenia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./choco.html">Chocó</a>
+                  <a class="nav-link" href="./pages/choco.html">Chocó</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./puertoCarreno.html"
+                  <a class="nav-link" href="./pages/puertoCarreno.html"
                     >Puerto Carreño</a
                   >
                 </li>
@@ -65,35 +63,37 @@
     </header>
     <main>
       <section class="principal">
-        <div class="container centrado">
+        <div>
           <h1>Viaja por Colombia</h1>
           <p class="subtitle">
             Conoce los lugares más populares de Bogotá, Medellín, Chocó, Puerto
             Carreño y Armenia.
           </p>
-          <a href="#destinos" class="button">Ver destinos</a>
+          <a href="#destinos">Ver destinos</a>
         </div>
       </section>
       <section id="destinos">
-        <div class="container">
+        <div>
           <h2>Destinos destacados</h2>
-          <div class="cards">
-            <article class="card">
+          <div>
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/1200x/bf/80/ca/bf80ca960afa89b5ecd8e2fea88d464f.jpg"
                   alt="Vista panorámica de Bogotá"
                 />
               </figure>
-              <div class="contenido">
+              <div>
                 <h3>Bogotá</h3>
-                <p>Saborea su gastronomía, museos y barrios históricos.</p>
-                <p class="button">
+                <p class="description">
+                  Saborea su gastronomía, museos y barrios históricos.
+                </p>
+                <p class="enlace">
                   <a href="./pages/bogota.html">Explorar</a>
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/1200x/a0/40/86/a040864d03ed40b22a1455dff633b129.jpg"
@@ -101,57 +101,63 @@
                 />
               </figure>
 
-              <div class="contenido">
+              <div>
                 <h3>Medellín</h3>
-                <p>Innovación, metro cable y clima primaveral todo el año.</p>
-                <p class="button">
+                <p class="description">
+                  Innovación, metro cable y clima primaveral todo el año.
+                </p>
+                <p class="enlace">
                   <a href="./pages/medellin.html">Explorar</a>
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/1200x/f9/c7/f3/f9c7f31a2e21aa775ecf6da978468125.jpg"
                   alt="Paisaje cafetero en Armenia"
                 />
               </figure>
-              <div class="contenido">
+              <div>
                 <h3>Armenia</h3>
-                <p>
+                <p class="description">
                   Paisaje cultural cafetero, parques y experiencias rurales.
                 </p>
-                <p class="button">
+                <p class="enlace">
                   <a href="./pages/armenia.html">Explorar</a>
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/1200x/01/9e/8f/019e8ffb2015dace85bd3bc7af59aa90.jpg"
                   alt="Selvas y playa en Chocó"
                 />
               </figure>
-              <div class="contenido">
+              <div>
                 <h3>Chocó</h3>
-                <p>Naturaleza exuberante, ballenas y cultura del Pacífico.</p>
-                <p class="button">
+                <p class="description">
+                  Naturaleza exuberante, ballenas y cultura del Pacífico.
+                </p>
+                <p class="enlace">
                   <a href="./pages/choco.html">Explorar</a>
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/1200x/f1/c2/d9/f1c2d99faf7eddbfcf145454412ad645.jpg"
                   alt="Río y llanura en Puerto Carreño"
                 />
               </figure>
-              <div class="contenido">
+              <div>
                 <h3>Puerto Carreño</h3>
-                <p>Llanos, atardeceres infinitos y ríos majestuosos.</p>
-                <p class="button">
+                <p class="description">
+                  Llanos, atardeceres infinitos y ríos majestuosos.
+                </p>
+                <p class="enlace">
                   <a href="./pages/puertoCarreno.html">Explorar</a>
                 </p>
               </div>
