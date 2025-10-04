@@ -1,3 +1,4 @@
+@use "sass:map";
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,13 @@ $breakpoints: (
 
 //Mixins for Responsive
 @mixin responsive-to($size) {
-  @media (min-width: map-get($breakpoints, $size)) {
+  $bp: map.get($breakpoints, $size);
+
+  @if $bp == null {
+    @error "Breakpoint `#{$size}` does not exist in $breakpoints: #{$breakpoints}";
+  }
+
+  @media (min-width: #{$bp}) {
     @content;
   }
 }
@@ -121,15 +128,14 @@ $breakpoints: (
   }
 }
 
-#destinos {
-
+@mixin style-target {
   div {
     @extend .container;
     h2 {
       display: flex;
       justify-content: center;
     }
-    div {
+    .cards {
       display: grid;
       grid-template-columns: 1fr;
       text-align: center;
@@ -185,5 +191,52 @@ $breakpoints: (
         }
       }
     }
+  
   }
+}
+
+#lugares .containerExtras{
+   display: flex;
+  flex-direction: column;
+  width: 100%;
+ @include responsive-to(md){
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    
+ }
+ 
+ .containerDatosRapidos{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  border: 1px solid #e4effd;
+  padding: 10px;
+  @include responsive-to(md){
+
+       margin-top:40px;
+    height: 315px;
+  }
+  ul{
+   margin-left: 1.2rem;
+   li{
+    margin: 4px 0;
+   }
+  }
+ }
+}
+
+#destinos {
+  @include style-target;
+}
+
+#lugares {
+  @include style-target;
+}
+
+
+iframe {
+  border-radius: 10px;
 }
