@@ -24,9 +24,7 @@
   <body>
     <header>
       <div class="header-top">
-        <p class="site-title texto-mayus">
-          <span class="texto-destacado">Viaja</span> por Colombia
-        </p>
+        <p><span>Viaja</span> por Colombia</p>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <button
@@ -68,20 +66,31 @@
         </nav>
       </div>
     </header>
-    <main class="inicio">
-      <section class="principal">
-        <div class="container centrado">
-          <h1>Puerto Carreño</h1>
-          <p>Explora los lugares más populares de Puerto Carreño.</p>
-          <a class="button" href="#lugares">Ver lugares</a>
+    <main>
+      <section
+        class="hero"
+        aria-label="Descubre Puerto Carreño"
+        style="
+          --hero-image: url('https://i.pinimg.com/1200x/8e/99/8f/8e998f266a2f4d6c3389d3d624c23b67.jpg');
+        "
+      >
+        <div class="hero__bg"></div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Puerto Carreño</p>
+          <h1 class="hero__title">Descubre Puerto Carreño</h1>
+          <p class="hero__subtitle">
+            Explora lugares icónicos, arte urbano y gastronomía andina.
+          </p>
+          <a href="#lugares" class="hero__cta">Ver lugares</a>
         </div>
       </section>
+      <section class="principal"></section>
 
       <section id="lugares">
-        <div class="container">
-          <h2 class="section-title">Lugares populares</h2>
+        <div>
+          <h2>Lugares populares</h2>
           <div class="cards">
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/1200x/57/84/21/5784216a22f72a01db02c46e250c9d90.jpg"

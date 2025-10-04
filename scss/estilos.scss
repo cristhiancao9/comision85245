@@ -22,6 +22,7 @@ $breakpoints: (
   xl: 1536px,
 );
 
+
 //Mixins for Responsive
 @mixin responsive-to($size) {
   $bp: map.get($breakpoints, $size);
@@ -53,7 +54,10 @@ $breakpoints: (
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 20px;
+  @include responsive-to(md){
+   padding: 0 20px;
+
+  }
 }
 
 .header-top {
@@ -101,7 +105,10 @@ $breakpoints: (
 }
 
 .principal {
+  height: 10px;
+ 
   background: linear-gradient(180deg, #0e72ed, #fff);
+  
   div {
     display: flex;
     flex-direction: column;
@@ -216,7 +223,7 @@ $breakpoints: (
   padding: 10px;
   @include responsive-to(md){
 
-       margin-top:40px;
+       margin-top:20px;
     height: 315px;
   }
   ul{
@@ -236,7 +243,120 @@ $breakpoints: (
   @include style-target;
 }
 
+@keyframes hero-fade-out {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to   { opacity: 0.8; transform: translateY(-5px) scale(.98); }
+}
+
+.hero {
+  min-height: clamp(420px, 70vh, 760px);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  color: $blanco;
+  text-align: center;
+animation: hero-fade-out linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 300px; 
+  --hero-image: none;
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background-image: var(--hero-image);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    transform: scale(1.03);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.25));
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;    
+    max-width: 1100px;
+    padding: 0 20px;
+  }
+
+  &__eyebrow {
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-acento;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-weight: 800;
+    line-height: 1.1;
+    font-size: clamp(28px, 6vw, 56px);
+    margin-bottom: 10px;
+    text-shadow: 0 1px 10px rgba(0,0,0,.45);
+  }
+
+  &__subtitle {
+    font-size: clamp(14px, 2.5vw, 20px);
+    opacity: .95;
+    margin-bottom: 18px;
+  }
+
+  &__cta {
+    @extend .btn-base;
+    background: $color-primario;
+    border: 0;
+    cursor: pointer;
+    transition: transform .15s ease, filter .15s ease;
+
+    &:hover { transform: translateY(-1px); filter: brightness(1.08); }
+  }
+
+  .hero__chips {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .chip {
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: $blanco;
+    background: rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,.28);
+    backdrop-filter: blur(2px);
+  }
+
+  /* Ajustes en pantallas medianas/grandes */
+  @include responsive-to(sm) {        // 1024px
+    .hero__subtitle { margin-bottom: 22px; }
+  }
+  @include responsive-to(md) {        // 1280px
+    .hero__content { padding: 0 32px; }
+  }
+}
 
 iframe {
   border-radius: 10px;
+}
+
+footer {
+  margin-top: 24px;
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+footer a {
+  color: #a5b4fc;
+  text-decoration: none;
 }

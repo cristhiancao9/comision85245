@@ -29,7 +29,6 @@
         </p>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
             <button
               class="navbar-toggler ms-auto"
               type="button"
@@ -69,22 +68,31 @@
         </nav>
       </div>
     </header>
-    <main class="inicio">
-      <section class="principal">
-        <div class="container centrado">
-          <h1>Armenia</h1>
-          <p class="texto-suave">
-            Explora los lugares más populares de Armenia.
+    <main>
+      <section
+        class="hero"
+        aria-label="Descubre Armenia"
+        style="
+          --hero-image: url('https://i0.wp.com/deventuretime.com/wp-content/uploads/2023/09/cocora-valley-1.jpg?resize=960%2C640&ssl=1');
+        "
+      >
+        <div class="hero__bg"></div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Armenia</p>
+          <h1 class="hero__title">Descubre Armenia</h1>
+          <p class="hero__subtitle">
+            Explora lugares icónicos, arte urbano y gastronomía andina.
           </p>
-          <a class="button" href="#lugares">Ver lugares</a>
+          <a href="#lugares" class="hero__cta">Ver lugares</a>
         </div>
       </section>
+      <section class="principal"></section>
 
       <section id="lugares">
-        <div class="container">
-          <h2 class="section-title">Lugares populares</h2>
+        <div>
+          <h2>Lugares populares</h2>
           <div class="cards">
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/736x/af/42/3a/af423abb7772cb422629b1c1aa20437a.jpg"
@@ -102,7 +110,7 @@
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/736x/16/c1/48/16c1483a01877b1ca578e302615737f2.jpg"
@@ -118,7 +126,7 @@
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/736x/42/ee/1d/42ee1d855be402c2779eafd5e058927a.jpg"
@@ -136,7 +144,7 @@
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/1200x/6b/c0/f1/6bc0f15c0fac0115b565d2aacce08469.jpg"
@@ -152,7 +160,7 @@
                 </p>
               </div>
             </article>
-            <article class="card">
+            <article>
               <figure>
                 <img
                   src="https://i.pinimg.com/1200x/95/5b/d9/955bd99bc315ffe3c595533162a70a77.jpg"
@@ -200,7 +208,7 @@
     </main>
 
     <footer>
-      <div class="container">
+      <div>
         <!-- Footer semántico -->
         <p>© 2025 Viaja por Colombia · Sitio de práctica para PreEntrega1</p>
       </div>
